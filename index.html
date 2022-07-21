@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Login</title>
 </head>
 <body>
+        <main class="container">
+
+        <div class="nav-container" id="topnav">
+        <a href="register.html">Registration</a>
+        </div>
     
+    <div class="login-container">
+        <p class="alert-error hide" id="alertError">Invalid Login Information!</p>
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+   
+            <input type="email" class="form-control" id="email" placeholder="name@example.com"></br>
+            <label for="inputPassword2" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button onclick="login();" type="button" class="btn btn-primary">Login</button>
+    </main>
+        <script src="scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/storeManager.js"></script>
+    <script src="scripts/login.js"></script>
+
 </body>
 </html>
